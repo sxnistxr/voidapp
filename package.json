@@ -48,6 +48,8 @@
 		"@oslojs/encoding": "^1.1.0",
 		"@prisma/client": "^5.22.0",
 		"@sentry/sveltekit": "9",
-		"arctic": "^3.3.0"
+		"arctic": "^3.3.0",
+		"lucide-svelte": "^0.475.0",
+		"melt": "^0.14.1"
 	}
 }

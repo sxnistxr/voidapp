@@ -1,11 +1,11 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap');
 @import 'tailwindcss';
-@import 'tailwindcss/preflight';
 @import 'tailwindcss/utilities';
 
 @layer base {
 	body {
-		@apply bg-neutral-950;
+		@apply bg-neutral-900;
 		@apply text-white;
-		font-family: 'Poppins', sans-serif;
+		font-family: 'DM Sans', serif;
 	}
 }

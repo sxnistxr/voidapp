@@ -1,2 +1,7 @@
-<h1>Welcome to SvelteKit</h1>
-<p>Visit <a href="https://svelte.dev/docs/kit">svelte.dev/docs/kit</a> to read the documentation</p>
+<script>
+	import Post from "$lib/components/Post.svelte";
+
+</script>
+<div class="mt-2">
+    <Post />
+</div>
