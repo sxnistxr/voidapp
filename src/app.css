@@ -1,2 +1,11 @@
 @import 'tailwindcss';
-@import "tailwindcss/preflight"
+@import 'tailwindcss/preflight';
+@import 'tailwindcss/utilities';
+
+@layer base {
+	body {
+		@apply bg-neutral-950;
+		@apply text-white;
+		font-family: 'Poppins', sans-serif;
+	}
+}

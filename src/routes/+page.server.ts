@@ -2,7 +2,6 @@ import { deleteSessionTokenCookie, setSessionTokenCookie, validateSessionToken }
 import { redirect } from '@sveltejs/kit';
 
 export const load = async ({ cookies, locals }) => {
-    console.log(locals)
     if(!locals.user) {
         return redirect(308, "/auth/login")
     }
