@@ -47,6 +47,7 @@
 		"@oslojs/crypto": "^1.0.1",
 		"@oslojs/encoding": "^1.1.0",
 		"@prisma/client": "^5.22.0",
-		"@sentry/sveltekit": "9"
+		"@sentry/sveltekit": "9",
+		"arctic": "^3.3.0"
 	}
 }

@@ -15,9 +15,8 @@ datasource db {
 
 model User {
   id       Int    @id @default(autoincrement())
+  googleId String
   username String @unique
-  email    String
-  password String
 
   sessions Session[]
 }

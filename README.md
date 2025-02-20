@@ -1,38 +1,80 @@
-# sv
+# VoidApp
 
-Everything you need to build a Svelte project, powered by [`sv`](https://github.com/sveltejs/cli).
+VoidApp is a fast, open-source, easy-to-use, and stylish social media platform. This project leverages modern web technologies to deliver a seamless and engaging user experience.
 
-## Creating a project
+## Features
 
-If you're seeing this, you've probably already done this step. Congrats!
+- **Fast**: Built with SvelteKit and Vite for optimal performance.
+- **Open Source**: Contributions are welcome! Check out our [GitHub repository](https://github.com/your-repo/voidapp).
+- **Easy to Use**: Intuitive design and user-friendly interface.
+- **Stylish**: Modern and sleek design with TailwindCSS.
 
-```bash
-# create a new project in the current directory
-npx sv create
+## Technologies Used
 
-# create a new project in my-app
-npx sv create my-app
-```
+- **SvelteKit**: For building the frontend.
+- **Bun**: For fast package management and out-of-box typescript support.
+- **TailwindCSS**: For styling.
+- **Prisma**: For database management.
+- **PostgreSQL**: As the database.
+- **Playwright**: For end-to-end testing.
+- **Sentry**: For error tracking and monitoring.
 
-## Developing
+## Checklist
 
-Once you've created a project and installed dependencies with `npm install` (or `pnpm install` or `yarn`), start a development server:
+### Added
 
-```bash
-npm run dev
+- [x] SvelteKit for frontend
+- [x] Vite for development and build
+- [x] TailwindCSS for styling
+- [x] Prisma for database management
+- [x] PostgreSQL as the database
+- [x] Playwright for end-to-end testing
+- [x] Sentry for error tracking and monitoring
+- [x] User authentication and authorization
 
-# or start the server and open the app in a new browser tab
-npm run dev -- --open
-```
+### To Be Added
 
-## Building
+- [ ] Real-time notifications
+- [ ] User profiles and settings
+- [ ] Social media feed
+- [ ] Like, comment, and share functionalities
+- [ ] Direct messaging
+- [ ] Media uploads (images, videos)
+- [ ] Search functionality
 
-To create a production version of your app:
+## Getting Started
 
-```bash
-npm run build
-```
+1. Clone the repository:
 
-You can preview the production build with `npm run preview`.
+   ```sh
+   git clone https://github.com/your-repo/voidapp.git
+   cd voidapp
+   ```
 
-> To deploy your app, you may need to install an [adapter](https://svelte.dev/docs/kit/adapters) for your target environment.
+2. Install dependencies:
+
+   ```sh
+   bun install
+   ```
+
+3. Set up the database:
+
+   ```sh
+   bunx prisma migrate dev
+   ```
+
+4. Run the development server:
+
+   ```sh
+   bun run dev
+   ```
+
+5. Open your browser and navigate to `http://localhost:3000`.
+
+## Contributing
+
+Contributions are welcome! Please read our contributing guidelines for more details.
+
+## License
+
+This project is licensed under the MIT License. See the LICENSE file for details.

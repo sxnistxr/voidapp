@@ -1,11 +1,12 @@
 import { deleteSessionTokenCookie, setSessionTokenCookie, validateSessionToken } from '$lib/prisma/authUtil';
 import { redirect } from '@sveltejs/kit';
-import type { PageServerLoad } from './$types';
 
-export const load: PageServerLoad = async ({ cookies, locals }) => {
+export const load = async ({ cookies, locals }) => {
+    console.log(locals)
     if(!locals.user) {
-        return redirect(308, "/login")
+        return redirect(308, "/auth/login")
     }
+    
 	const token = cookies.get('session') ?? null;
 	if (!token) {
 		return new Response(null, {
